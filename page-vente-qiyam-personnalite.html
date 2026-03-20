@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>القيم التي تهيمن على شخصيتك – جلسة فردية 2 ساعات | HG Mental Coaching</title>
+  <meta name="description" content="جلسة 1:1 عبر Zoom لمدة ساعتين لاكتشاف القيم التي تهيمن على شخصيتك وربطها بقراراتك وأهدافك. اختر الدفع حسب مكان إقامتك." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --bg-soft: #f1f5f9;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --accent: #0d9488;
+      --accent-soft: #ccfbf1;
+      --cta-orange: #ea580c;
+      --cta-orange-hover: #c2410c;
+      --cta-green: #059669;
+      --cta-green-hover: #047857;
+      --font-body: 'Cairo', sans-serif;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      background: var(--bg-page);
+      color: var(--text);
+      line-height: 1.75;
+      min-height: 100vh;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .bg-gradient {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 60vh;
+      background: linear-gradient(180deg, #ccfbf1 0%, transparent 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 0 2rem;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+      border: 1px solid #99f6e4;
+      letter-spacing: 0.02em;
+    }
+
+    .hero h1 {
+      font-family: var(--font-body);
+      font-size: clamp(2rem, 5.5vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .hero .tagline {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 36ch;
+      margin: 0 auto;
+    }
+
+    .section {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+
+    .section h2 {
+      font-family: var(--font-body);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+    .section strong { color: var(--text); }
+
+    .section-highlight {
+      border-color: #99f6e4;
+      background: var(--accent-soft);
+    }
+
+    .hook-text {
+      font-family: var(--font-body);
+      font-size: 1.2rem;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .hook-sub {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+
+    .teaser-intro { margin-bottom: 0.75rem; }
+
+    .teaser-list {
+      list-style: none;
+      margin: 0 0 1rem 0;
+      padding: 0;
+    }
+
+    .teaser-list li {
+      position: relative;
+      padding: 0.4rem 0 0.4rem 1.5rem;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .blockquote {
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text-muted);
+      border-right: 4px solid var(--accent);
+      padding: 1rem 1.25rem 1rem 0;
+      margin: 0;
+      background: var(--accent-soft);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    }
+
+    .hero-image-wrap {
+      text-align: center;
+      margin: 1.5rem 0 2rem;
+    }
+
+    .hero-image-wrap img {
+      max-width: 280px;
+      width: 100%;
+      height: auto;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+
+    .hero-image-wrap .img-placeholder {
+      max-width: 280px;
+      margin: 0 auto;
+      aspect-ratio: 16/10;
+      background: var(--bg-soft);
+      border: 2px dashed #cbd5e1;
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .choice-heading {
+      text-align: center;
+      font-family: var(--font-body);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 1.5rem;
+      padding-top: 0.5rem;
+    }
+
+    .payment-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 560px) {
+      .payment-cards { grid-template-columns: 1fr; }
+    }
+
+    .payment-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem 1.25rem;
+      text-align: center;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      box-shadow: var(--shadow);
+    }
+
+    .payment-card:hover {
+      border-color: #cbd5e1;
+      box-shadow: var(--shadow-md);
+    }
+
+    .payment-card.tunisia { border-top: 4px solid var(--cta-orange); }
+    .payment-card.international { border-top: 4px solid var(--cta-green); }
+
+    .payment-card .label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .payment-card.tunisia .label { color: var(--cta-orange); }
+    .payment-card.international .label { color: var(--cta-green); }
+
+    .payment-card .title {
+      font-family: var(--font-body);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.35rem;
+    }
+
+    .payment-card .desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    .payment-card .price {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .btn-payment {
+      display: block;
+      width: 100%;
+      padding: 0.9rem 1.25rem;
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-payment.tunisia {
+      background: var(--cta-orange);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
+    }
+
+    .btn-payment.tunisia:hover {
+      background: var(--cta-orange-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+    }
+
+    .btn-payment.international {
+      background: var(--cta-green);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.25);
+    }
+
+    .btn-payment.international:hover {
+      background: var(--cta-green-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35);
+    }
+
+    .btn-payment:active { transform: translateY(0); }
+
+    .payment-note {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 1.5rem 1rem 3rem; }
+      .hero { padding: 2rem 0 1.5rem; }
+      .payment-card { padding: 1.5rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  <div class="container">
+    <header class="hero">
+      <span class="hero-badge">جلسة فردية 1:1</span>
+      <h1>القيم التي تهيمن على شخصيتك</h1>
+      <p class="tagline">من التشتت إلى الوضوح: بوصلة داخلية لقرارات وأهداف أكثر انسجاماً</p>
+      <div class="hero-image-wrap">
+        <img src="assets/photo-qiyam-personnalite.png" alt="صورة الجلسة – القيم التي تهيمن على شخصيتك HG Mental Coaching" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="img-placeholder" style="display: none;">صورة الجلسة</div>
+      </div>
+    </header>
+
+    <section class="section section-highlight">
+      <p class="hook-text">«ليست مجرد كلمات على ورقة، بل <strong>بوصلة حية</strong>: قيمك، أولوياتك، وما الذي يجعلك تقول نعم أو لا بصدق، ثم خطة عملية لتقدّم أكثر اتساقاً مع ذاتك.»</p>
+      <p class="hook-sub">جلسة واحدة مكثّفة مدتها 2 ساعات عبر Zoom، مخصّصة لك وحدك. نخرج منها بملخص واضح وتوصيات قابلة للتطبيق.</p>
+    </section>
+
+    <section class="section">
+      <h2>لماذا العمل على قيمك؟</h2>
+      <p>كثيراً ما نتخذ قرارات مبنية على الضغط، الخوف، أو توقعات الآخرين دون أن ندرك ما الذي يهمّنا حقاً. <strong>القيم</strong> التي تهيمن على شخصيتك هي ما يوجّه اختياراتك في الخفاء. عندما تصبح واضحة، يصبح من الأسهل أن تختار عملاً، علاقات، وأولويات تنسجم مع من أنت.</p>
+    </section>
+
+    <section class="section">
+      <h2>لمن هذه الجلسة؟</h2>
+      <p>من يشعر أن قراراته متذبذبة، أو أنه يقول نعم رغم عدم رغبته، أو أنه يبحث عن معنى واتجاه، أو أنه يواجه صراعاً بين ما يريده وما يتوقعه من نفسه أو من محيطه، أو يريد أهدافاً وشغفاً أكثر صدقاً مع قيمه.</p>
+    </section>
+
+    <section class="section">
+      <h2>ماذا تتضمن الجلسة؟</h2>
+      <p class="teaser-intro">هذه جلسة فردية مخصصة مدتها <strong>2 ساعات</strong> عبر Zoom. نعمل معاً على كشف القيم التي تهيمن على شخصيتك، وكيف تظهر في حياتك اليومية، ثم نربطها بقراراتك وأولوياتك حتى تنتقل من التشتت إلى وضوح عملي وخطة قابلة للتطبيق.</p>
+      <p class="teaser-intro">خلال الجلسة:</p>
+      <ul class="teaser-list">
+        <li>— تحديد القيم الأساسية التي تقودك فعلاً (وليس فقط ما تتمنى أن تكون عليه)</li>
+        <li>— فهم كيف تظهر قيمك في قراراتك، علاقاتك، وطريقة عملك</li>
+        <li>— تمييز التوتر بين القيم الحقيقية والتوقعات المفروضة</li>
+        <li>— ربط قيمك بأهداف واضحة وقابلة للقياس</li>
+        <li>— تعلّم طرق التحفيز الذاتي عندما تهتز الدافعية</li>
+        <li>— بناء قواعد شخصية تساعدك على الاختيار في اللحظات الصعبة</li>
+        <li>— تعزيز الحدود العاطفية بوعي واحترام لذاتك وللآخرين</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>كلمة من المدرب</h2>
+      <blockquote class="blockquote">
+        «عندما تعرف قيمك الحقيقية، تتوقف عن مطاردة ما لا يناسبك. تصبح قراراتك أقرب إلى صدقك الداخلي، وتتعلم أن تقول "لا" حين يكون ذلك حماية لقيمك، و"نعم" حين تكون مستعداً بصدق.»
+      </blockquote>
+    </section>
+
+    <section class="section">
+      <h2>اختر طريقة الدفع حسب مكان إقامتك</h2>
+      <p class="choice-heading">أين أنت؟</p>
+
+      <div class="payment-cards">
+        <div class="payment-card tunisia">
+          <p class="label">دفع من تونس</p>
+          <p class="title">أنا في تونس</p>
+          <p class="desc">ادفع بالدينار التونسي، بطاقة تونسية أو e-dinar أو دولية، عبر Konnect</p>
+          <p class="price" id="price-tunisia">XXX د.ت</p>
+          <a href="#" id="btn-tunisia" class="btn-payment tunisia">الذهاب إلى صفحة الدفع تونس</a>
+        </div>
+
+        <div class="payment-card international">
+          <p class="label">دفع من الخارج</p>
+          <p class="title">أنا خارج تونس</p>
+          <p class="desc">ادفع ببطاقتك الدولية (Visa, Mastercard…) عبر Podia، مع تأكيد فوري وحجز الجلسة</p>
+          <p class="price" id="price-international"></p>
+          <a href="#" id="btn-international" class="btn-payment international">الذهاب إلى صفحة الدفع Podia</a>
+        </div>
+      </div>
+
+      <p class="payment-note">الدفع آمن. بعد التأكيد، تحصل على تعليمات حجز جلستك فوراً (Podia) أو خلال 24 ساعة (Konnect).</p>
+    </section>
+
+    <footer>
+      <p>القيم التي تهيمن على شخصيتك، جلسة 1:1 | HG Mental Coaching</p>
+    </footer>
+  </div>
+
+  <script>
+    // عدّل الروابط والسعر حسب إعداداتك (منتج Podia منفصل عن جلسة تحليل الشخصية إن لزم)
+
+    var URL_TUNISIA = 'https://dashboard.konnect.network/auth/register'; // ← رابط Konnect
+    var URL_PODIA = '#'; // ← ضع رابط صفحة المنتج Podia لهذه الجلسة
+    var PRIX_TUNISIA = 'XXX د.ت';
+
+    document.getElementById('btn-tunisia').href = URL_TUNISIA;
+    document.getElementById('btn-international').href = URL_PODIA;
+    document.getElementById('price-tunisia').textContent = PRIX_TUNISIA;
+  </script>
+</body>
+</html>
